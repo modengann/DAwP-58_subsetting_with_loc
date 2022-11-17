@@ -2,12 +2,12 @@
 
 import pandas as pd
 
-def subsetting_with_loc(data):
+def subsetting_with_loc():
+    df = pd.read_csv('src/municipal.tsv', sep='\t', index_col=0)
     pass
 
 def main():
-    df = pd.read_csv('src/municipal.tsv', sep='\t', index_col=0)
-    subsetting_with_loc(df)
+    subsetting_with_loc()
 
 if __name__ == "__main__":
     main()
